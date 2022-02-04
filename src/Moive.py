@@ -19,3 +19,6 @@ class Movies:
             print("{}. {} ({}) Directed by: {}".format(i + 1, movies[i].title,
                 movies[i].year, movies[i].crew[:movies[i].crew.find("(") +
                     len("(")].replace("(", "")))
+        print("The higest ranked movie is {} ({}) Directed by: {}".format(movies[0].title, movies[0].year,
+                movies[0].crew[:movies[0].crew.find("(") +
+                    len("(")].replace("(", "")))
