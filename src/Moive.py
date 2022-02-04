@@ -16,4 +16,6 @@ class Movies:
     def printMovies(self) -> None:
         movies = self.getMovies()
         for i in range(len(movies)):
-            print("{}. {} ({})".format(i + 1, movies[i].title, movies[i].year))
+            print("{}. {} ({}) Directed by: {}".format(i + 1, movies[i].title,
+                movies[i].year, movies[i].crew[:movies[i].crew.find("(") +
+                    len("(")].replace("(", "")))
